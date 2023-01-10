@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script>
+        function logout(){
+       
+            // console.log(localStorage.getItem("userData"));
+            localStorage.removeItem("userData");
+            localStorage.removeItem("allProducts");
+            localStorage.removeItem("isUserLoggedIn");
+
+            alert("Logout is Succed !");
+        }
+
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between 50px;
+            border:1px solid rgb(226, 222, 222);
+            height: 80px;
+            
+          
+            
+            
+        }
+       
+
+        #navbar>img{
+            width: 90px;
+            height: 65px;
+            margin-top: 15px;
+        }
+        #navbar>div{
+            display: flex;
+            margin-top: 35px;
+            margin-left: 30px;
+            /* border:1px solid blue; */
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            width: 40%;
+            justify-content: space-between ;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            
+        }
+        #navbar div:nth-child(3){
+            border:1px solid rgb(1, 3, 1);
+            margin-left: 90px;
+            width:300px;
+            height: 40px;
+            margin-top: 30px;
+        }
+
+        #navbar div:nth-child(3)>i{
+            margin-top: 10px;
+            margin-left: 5px ;
+           
+
+        }
+        #navbar div:nth-child(3)>input{
+            width: 300px;
+            border: none;
+        }
+        #navbar div:nth-child(4){
+            width:50px;
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            height: 25px;
+        
+        }
+        #navbar div:nth-child(4)>p{
+    
+            
+            margin-top:28px;
+            margin-left:-25px
+        }
+        #navbar div:nth-child(4)>i{
+            margin-top: 2px;
+            font-size: 20px;
+            margin-left: 15px;
+            
+            
+        }
+        #navbar div:nth-child(5){
+            /* border: 1px solid green; */
+            width:50px;
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        #navbar div:nth-child(5)>i{
+            margin-top: 2px;
+            font-size: 20px;
+            margin-left: 15px;
+
+        }
+        #navbar div:nth-child(5)>p{
+            margin-top:28px;
+            margin-left:-29px
+
+        }
+        #navbar div:nth-child(6){
+            /* border: 1px solid green; */
+            width:50px;
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        #navbar div:nth-child(6)>i{
+            margin-top: 2px;
+            font-size: 20px;
+            margin-left: 25px;
+
+        }
+        #navbar div:nth-child(6)>p{
+            margin-top:28px;
+            margin-left:-20px
+
+        }
+        #page>img{
+            margin-top: 10px;
+            height:350px;
+            width:1350px;
+            /* border:1px solid blue */
+        }
+        #navbar>button{
+            width:60px;
+            height: 30px;
+            margin-top: 40px;
+            margin-left: 15px;
+            background-color:rgb(133, 133, 252);
+            color: white;
+        }
+        #page1{
+            display: flex;
+             /* border: 3px solid black; */
+        }
+        #page1>img {
+
+            width:150px;
+            height:180px;
+        
+        }
+        #page2{ 
+            display: flex;
+             /* border: 3px solid black; */
+        }
+        #page2{
+            width:190px;
+            height:190px;
+
+        }
+        #h1{
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        #page3{
+            display: flex;
+
+
+        }
+        #page3{
+            width:130px;
+            height:130px;
+
+
+        }
+        #page4{
+            display: flex;
+            /* border: 1px solid black; */
+            height: 250px;
+            font-size: 25px;
+            margin-top: 50px;
+           
+        }
+        
+        
+        #h61{
+            /* border: 1px solid black; */
+            margin-left: 55px;
+
+
+        }
+        #h62{
+            /* border: 1px solid black; */
+            margin-left: 55px;
+
+
+        }
+        #h63{
+            /* border: 1px solid black; */
+            margin-left: 55px;
+
+
+        }
+        #h61>p{
+            font-size: 17px;
+            color: grey;
+            margin-top: 2px;
+        }
+        #h62>p{ 
+            font-size: 17px;
+            color: grey;
+            margin-top: 2px;
+
+        }
+        #h63>a>img{
+            width: 115px;
+            height: 45px;
+            margin-top: 10px;
+        }
+
+    
+        
+
+        
+        
+            
+        
+
+
+
+
+
+      
+        
+    </style>
+</head>
+<body>
+    <div id="screen1">
+        <div id="navbar">
+            <img src="./myntra logo.jpg"/>
+           <div><h4><a href="./product.html">MEN</a></h4>
+           <h4><a href="./product.html">WOMEN</a></h4>
+           <h4><a href="./product.html">KIDS</a></h4>
+           <h4><a href="./product.html">HOME AND LIVING</a></h4>
+           <h4><a href="./product.html">BEAUTY</a></h4>
+           <h4><a href="./product.html">STUDIO</a></h4>
+           </div>
+           <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Search for products,brands and more">
+        </div>
+        <div>
+         <i class="fa-regular fa-user"></i>
+         <P>profile</P>
+        </div>
+        <div>
+            <i class="fa-regular fa-heart"></i>
+            <p>wishlist</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Bag</p>
+        </div>
+        <button onclick="logout()">LogOut</button>
+
+
+    </div>
+        <div id="page">
+            <img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/1/70a3d1a4-f16a-45ca-9bb4-64dc2315352b1659297228544-Desktop-Banners_unisex-with-kids.jpg">
+        </div>
+        <div><h1>DEAL OF THE DAY</h1></div>
+
+        <div id="page1">
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/49939a83-5bf1-4c78-b55d-40d7545f843e1660744474034-Kurtas--4-.jpg "/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/d5f885c5-4a54-4634-81da-6333aa51c1a11660744537981-Dresses--13-.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/ca8aa842-a6ed-4c53-b85a-5d7551a650121660744817501-Work-Ready-Shoes--1-.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/04672f44-d01c-4f5a-b005-8e01c00582261660744864260-Casual-Shoes---Flip-Flops--4-.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/9e19d40a-6720-4d62-92e0-32cd1ee6bee91660744897243-Flats---Heels--3-.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/0e56c483-33e8-4ea5-bae0-96020b7b31401660744930158-Dinnerware---Kitchenware.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/948bd0a5-5b50-4b1e-93cc-234a9be8cfe11660744976622-Accessories--2-.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/ffa236ca-da08-4fb8-bec3-9b4950c943851660745008808-KAMA.jpg"/>
+            <img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/062cea23-9a6a-44b9-bdd4-87cae6a462311645602543339-Kurta-sets.jpg"/>
+        
+        </div>
+        <div id="h1"> <h1>BEST OF MYNTRA EXCLUSIVE BRANDS </h1>
+        </div>
+
+       
+
+        <div id="page2">
+            <img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/8d65d400-decd-4f42-902c-a40350a16ed11645602543346-Kurtas.jpg"/>
+            <img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/398ee53b-5899-4a9a-9d0b-b35d60c01cb41645602543325-Dresses.jpg"/>
+            <img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/2f410d81-7fae-400e-9ecc-b4a8b6df72b91645602543430-Women-Jeans.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/76acf345-fc62-4b49-8b2c-9c0fc9c925311644407437977-Tops_-_Dressberry-_AAY_-_more.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/046147d1-1874-4c10-adb9-6dbd88b606e71644407437923-Kurtas-_Anouk-_Sangria_-_more.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/201d1bfd-287e-47b6-bef6-3c46eac444a51644407437906-Jeans_-_Roadster-_M-H_and_more.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/2b15a87a-1d92-4edf-99c2-ec390a38089e1644407437872-Activewear_-_HRX-_Slazenger.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/eb70855e-98c4-412d-bf20-50804546d57e1644407437883-Dresses_-_Dressberry-_Chemistry_-_more.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/eff5a33f-ea24-4e70-84e5-ec4d25ee5c7b1644407437968-Roadster_and_KnK_Tshirts.jpg"/>
+
+        </div>
+        <div>
+            <h1>CATEGORIES TO BAG</h1>
+        </div>
+        <div id="page3">
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/aa4658b5-d723-4652-9ea1-00456b355c3a1645602467046-Kurta-Sets.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/aae4be67-e611-47f4-b94e-92a16a36df731645602467007-Hangbags.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/0f0be09e-4155-47bf-82e1-51044e7e7fd11645602467052-Kurtas.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/dd4414f8-4e1b-4a22-997e-8e06c0a5ff861645602467167-T-Shirts.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/f9ca5609-b634-42d4-8c08-a8eaebb818b71645602467085-Sarees.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/0b7869d4-f825-4625-b1db-58ad10a45f301645602467093-Shirts.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/b34a30a6-504b-4c94-b7e1-61391d536bc51645602467038-Jewellery.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/fb091b07-c275-4578-b08d-b4f93dfe9e841645602466976-Beauty.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/09b3164c-241a-4134-baa1-49b12c56c3901645602466968-Bath-Essentials.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/054a056f-33e8-4b6c-b747-9b88d7fce0a11645602467174-Watches.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/d3c5cd23-392f-40be-8080-99ffb79c27261645602467128-Tops.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/7a774194-94e6-49b5-b8bb-64bf9901bc671645602466989-Casual-Shoes.jpg"/>
+            <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/d13255df-c846-4dbd-8458-77ccaba4f9eb1645602467142-Trousers.jpg"/>
+        </div>
+
+        <div id="page4">
+          <div id="h61"><h6>ONLINE SHOPPING</h6>
+            <p>Men</p>
+            <p>Women</p>
+            <p>Kids</p>
+            <p>Home and Living</p>
+            <p>Beauty</p>
+            <p>Gifts Cards</p>
+            <p>Myntra Insiders</p>
+            <h6>USEFUL LINKS</h6>
+            <p>Blog</p>
+            <p>Careers</p>
+        </div> 
+
+            <div id="h62"><h6>CUSTOMER POLICIES</h6>
+                <p>Contact Us</p>
+                <p>FAQ</p>
+                <p>T&C</p>
+                <p>Terms Of Use </p>
+                <p>Track Orders</p>
+                <p>Shipping</p>
+                <p>Returns</p>
+                <p>Cancellation</p>
+                <p>Returns</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div id="h63"><h6>EXPERIENCE MYNTRA APP ON MOBILE</h6>
+             <a href="https://play.google.com/store/apps/details?id=com.myntra.android" data-reactid="97"><img src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"/></a>
+             <h6>KEEP IN TOUCH</h6>
+
+             <img src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png" style="width: 20px; height: 20px;"/>
+             <img src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png" style="width: 20px; height: 20px;"/>
+             <img src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png" style="width: 28px; height: 20px;"/>
+
+            </div>
+
+            <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" style="width: 48px; height: 40px;">
+            <div data-reactid="114"><strong data-reactid="115">100% ORIGINAL </strong><!-- react-text: 116 --> guarantee for all products at myntra.com</div>
+            
+
+            
+
+        </div>
+
+        
+
+        
+
+        
+
+
+
+
+
+
+
+
+                
+    </div>
+    <script src="./server.js"></script>
+</body>
+</html>

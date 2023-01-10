@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <style>
+        #screen1{
+            display: flex;
+        }
+        #leftdiv{
+            border:1px solid rgb(224, 220, 220);
+            width:20%;
+            height: 700px;
+            /* position: fixed; */
+            
+        }
+        #leftdiv div:nth-child(1){
+            /* margin:auto; */
+            font-size: 15px;
+            /* margin-top: 10px; */
+           
+        }
+        #leftdiv div:nth-child(1)>div>div>input{
+            margin-left: 55px;
+            
+            
+
+        }
+        #rightdiv{
+            width:80%;
+            /* border:1px solid purple ; */
+            margin-left: 35px;
+            height: 100%;
+
+        }
+        #rightdiv>div{
+            display: flex;
+            /* border: 1px solid green; */
+            height:49%;
+            margin-left: 20px;
+            margin-top: 10px;
+            justify-content: space-between;
+            margin-inline-end: 20px;
+
+        }
+        #rightdiv>div>div{
+            /* border:1px solid blue; */
+            width:15%;
+            height: 100%;
+            margin-left: 15px;
+            /* margin-top: 10px; */
+            margin-bottom: 2px;
+            margin-inline-end: 20px;
+        }
+        #rightdiv>div>div>img{
+            width: 100%;
+            height: 74%;
+        }
+        #rightdiv>div>div>div{
+            border:1px solid black;
+            height:90px;
+            
+
+        }
+        #rightdiv>div>div>div>p{
+            font-size:15px;
+            margin-top: -1px;
+            font-weight: 600;
+            margin-left: 25px;
+        }
+        #rightdiv>div>div>div>button{
+            margin-left:30px;
+        }
+        #navbar1{
+            background-color: rgb(54, 127, 168);
+            color:white;
+        }
+        #cart>button{
+            width: 70px;
+            height: 30px;
+            font-size: 20px;
+            margin-left: 1080px;
+            margin-top: 20px;
+        
+        }
+        #navbar1{
+            border: 1px solid black;
+            display: flex;
+        }
+        #navbar1 div:nth-child(2)>h2{
+            margin-left: 500px;
+            font-size: 35px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration:underline;
+            
+        }
+        #screen1{
+            background-color: rgb(138, 173, 238);
+        }
+
+        
+        
+            
+    
+            
+        
+    
+    </style>
+</head>
+<body>
+  
+    
+    <div id="navbar1">
+        <div>
+        <p>Home/Footwear/Mfb Brand</p>
+        <p style="font-size:18px;font-weight:600">Mfb Brand-2355 items</p>
+        <h2>Filters</h2>
+        </div>
+        <div>
+            <h2>PRODUCTS</h2>
+            <div id="cart"><button><a href="./cart.html">Cart</a></button></div>
+          
+        </div>
+    </div>
+    <div id="screen1">
+        <div id="leftdiv">
+            <div>
+                <div>
+            <lable>Men</lable>
+            <div>
+            <input type="radio"/></div>
+            </div>
+            <div>
+            <lable>Women</lable>
+            <div>
+            <input type="radio"/></div>
+            </div>
+            <div>
+            <lable>Girl</lable>
+            <div>
+            <input type="radio"/></div>
+            </div>
+            <div>
+            <lable>Boy</lable>
+            <div>
+            <input type="radio"/></div>
+            </div>
+            </div>
+            <div>
+                
+                <h4>CATEGORIES</h4>
+                <div>
+                <input type="checkbox">
+                <label>Tshirts</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label>Shirts</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label>Jeans</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label>Belts</label>
+                </div>
+            </div>
+            <div>
+                <h5>BRAND</h5>
+                <div>
+                    <input type="checkbox">
+                <label>Roadster</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                <label>999Store</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                <label>SOJANYA</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                <label>Mast & Harbour</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                <label>Flying Machine</label>
+                </div>
+                
+            </div>
+            <div>
+                <h5>PRICE</h5>
+                <div>
+                    <input type="checkbox">
+                <label>Rs.500 to Rs.2000</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                <label>Rs.1000 to Rs.1500</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                <label>Rs.800 to Rs.2500</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                <label>Rs.1000 to Rs.2000</label>
+                </div>
+                
+
+
+            </div>
+
+
+        </div>
+        <div id="rightdiv">
+            <div>
+                <div id="lineOneOne">
+                    
+                 <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg">
+                    
+                    <div>
+                        <button onclick="addToCart(lineOneOne)">Add to cart</button>
+                        <p>Roadster 
+                        Mens Sneakers</p>
+
+                        <p>800</p>
+                        
+                    </div>
+                </div>
+
+                <div id="lineOneTwo">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17097806/2022/2/10/aa9f5212-f2eb-4531-b836-1df0c3d3fe2d1644484313283MastHarbourMenWhiteStripedSneakers1.jpghttps://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17097806/2022/2/10/aa9f5212-f2eb-4531-b836-1df0c3d3fe2d1644484313283MastHarbourMenWhiteStripedSneakers1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineOneTwo)">Add to cart</button>
+                           <p>Adidas
+                            Mens Sneakers
+                           </p>
+                           <p>850</p>
+                           
+                       </div>
+                   </div>
+
+                   <div id="lineOneThree">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/20982442/2022/11/29/d4c004ad-d941-447e-9f3a-e496ea748d381669728094821CasualShoes1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineOneThree)">Add to cart</button>
+                           <p>Nicky
+                            Mens Sneakers</p>
+                        
+                           <p>820</p>
+                          
+                       </div>
+                   </div>
+                  
+                   <div id="lineOneFour">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15682498/2021/11/19/9e649e38-e462-4136-a3ed-331e06c8e74d1637295164575-Roadster-Men-White-Striped-Casual-Sneakers-1591637295164246-1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineOneFour)">Add to cart</button>
+                           <p>Sports Mens sneakers
+                           </p>
+                           <p>750</p>
+                          
+                       </div>
+                   </div>
+                   <div id="lineOneFive">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17542196/2022/8/4/f961f156-bd4d-4ea7-9cd9-212ed4f6d58f1659630922124KookNKeechMenWhiteWovenDesignSneakers1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineOneFive)">Add to cart</button>
+                           <p>
+                            Mens Sneakers
+                           </p>
+                           <p>1000</p>
+                           
+                       </div>
+                   </div>
+
+            </div>
+            <div>
+                <div id="lineTwoOne">
+                    
+                 <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15321114/2021/9/9/c340b549-9f51-4c5b-8efe-3b3fe7ae2f731631204557472-HERENOW-Women-Beige--Brown-Solid-Slip-On-4931631204557346-6.jpg">
+                    
+                    <div>
+                        <button onclick="addToCart(lineTwoOne)">Add to cart</button>
+                        <p>Flats 
+                        For Women</p>
+                        <p>800</p>
+                        
+                    </div>
+                </div>
+
+                <div id="lineTwoTwo">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/20838394/2022/11/21/8d045c0a-9a0a-4f67-b53a-28ee5a495d1c1669013678541DressBerryBlackPUStilettoPumpswithBuckles1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineTwoTwo)">Add to cart</button>
+                           <p>Hills For Women
+                           </p>
+                           <p>850</p>
+                           
+                       </div>
+                   </div>
+
+                   <div id="lineTwoThree">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15461198/2022/7/4/6d46692f-240d-4605-bd21-713cdd927ca51656935635273-Anouk-Women-Flats-8671656935634955-1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineTwoThree)">Add to cart</button>
+                           <p>Flats For Women
+                           </p>
+                           <p>800</p>
+                          
+                       </div>
+                   </div>
+                  
+                   <div id="lineTwoFour">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15645732/2022/5/6/90b79e35-debe-477b-acaa-757e38d4c5251651854061869-CORSICA-Women-Black--Gold-Toned-Colourblocked-Handcrafted-Bl-1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineTwoFour)">Add to cart</button>
+                           <p>Hills For Women
+                           </p>
+                           <p>750</p>
+                          
+                       </div>
+                   </div>
+                   <div id="lineTwoFive">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15645732/2022/5/6/90b79e35-debe-477b-acaa-757e38d4c5251651854061869-CORSICA-Women-Black--Gold-Toned-Colourblocked-Handcrafted-Bl-1.jpg"/>
+                       <div>
+                        <button onclick="addToCart(lineTwoFive)">Add to cart</button>
+                           <p>Hills For Women
+                           </p>
+                           <p>750</p>
+                           
+                       </div>
+                   </div>
+            </div>
+            <div>
+                <div id="lineThreeOne">
+                    
+                 <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12666212/2020/11/23/6f25477c-2e43-4f25-95ee-7756e2717d1e1606116048805-WROGN-Unisex-Duffel-Bag-3221606116046402-1.jpg">
+                    
+                    <div>
+                        <button onclick="addToCart(lineThreeOne)">Add to cart</button>
+                        <p>Travel Bag</p>
+                        <p>800</p>
+                        
+                    </div>
+                </div>
+
+                <div id="lineThreeTwo">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9377223/2019/6/11/e21fd642-69af-4a46-9977-385328a605f01560256574215-HRX-by-Hrithik-Roshan-Unisex-Backpacks-691560256573072-1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineThreeTwo)">Add to cart</button>
+                           <p>Laptop Bag
+                           </p>
+                           <p>850</p>
+                           
+                       </div>
+                   </div>
+
+                   <div id="lineThreeThree">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2453357/2018/3/7/11520408002220-HRX-by-Hrithik-Roshan-Unisex-Duffel-Bag-4621520408002081-1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineThreeThree)">Add to cart</button>
+                           <p>Gym Bag
+                           </p>
+                           <p>800</p>
+                          
+                       </div>
+                   </div>
+                  
+                   <div id="lineThreeFour">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/14470566/2021/8/9/39fd43fa-83a5-4420-8e1a-bd4fad63f6011628497835795-HRX-by-Hrithik-Roshan-Unisex-Backpacks-9791628497835048-1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineThreeFour)">Add to cart</button>
+                           <p>School Bag
+                           </p>
+                           <p>750</p>
+                          
+                       </div>
+                   </div>
+                   <div id="lineThreeFive">
+                    
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16629132/2022/1/17/322291c5-2318-44b8-b3f6-9f72a9402eae1642421013196-HRX-by-Hrithik-Roshan-Unisex-Backpacks-7621642421012692-1.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineThreeFive)">Add to cart</button>
+                           <p>College Bag
+                           </p>
+                           <p>1000</p>
+                           
+                       </div>
+                   </div>
+            </div>
+
+
+            <div>
+                <div id="lineFourOne">
+                    
+                 <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/aa4658b5-d723-4652-9ea1-00456b355c3a1645602467046-Kurta-Sets.jpg">
+                    
+                    <div>
+                        <button onclick="addToCart(lineFourOne)">Add to cart</button>
+                        <p>Kurta Sets</p>
+                        <p>800</p>
+                        
+                    </div>
+                </div>
+
+                <div id="lineFourTwo">
+                    
+                    <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/aae4be67-e611-47f4-b94e-92a16a36df731645602467007-Hangbags.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineFourTwo)">Add to cart</button>
+                           <p>Hand Bags
+                           </p>
+                           <p>850</p>
+                           
+                       </div>
+                   </div>
+
+                   <div id="lineFourThree">
+                    
+                    <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/0f0be09e-4155-47bf-82e1-51044e7e7fd11645602467052-Kurtas.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineFourThree)">Add to cart</button>
+                           <p>Kurtas
+                           </p>
+                           <p>800</p>
+                          
+                       </div>
+                   </div>
+                  
+                   <div id="lineFourFour">
+                    
+                    <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/dd4414f8-4e1b-4a22-997e-8e06c0a5ff861645602467167-T-Shirts.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineFourFour)">Add to cart</button>
+                           <p>T-Shirts
+                           </p>
+                           <p>750</p>
+                          
+                       </div>
+                   </div>
+                   <div id="lineFourFive">
+                    
+                    <img src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/f9ca5609-b634-42d4-8c08-a8eaebb818b71645602467085-Sarees.jpg">
+                       
+                       <div>
+                        <button onclick="addToCart(lineFourFive)">Add to cart</button>
+                           <p>Sarees
+                           </p>
+                           <p>1000</p>
+                           
+                       </div>
+                   </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    <script src="./server.js"></script>
+</body>
+</html>

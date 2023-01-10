@@ -1,0 +1,89 @@
+*screen{
+    margin:0%;
+    padding: 0%;
+}
+
+
+#screen{
+    border:1px solid black;
+    height:606px;
+    background-image: url("./shp.jpg");
+    background-size:100%;
+}
+
+
+
+
+
+#register{
+    display: flex;
+    flex-direction:column ;
+    margin-top: 80px;
+    margin-left:40%;
+    font-size: 40px;
+    background-color: rgb(59, 52, 59);
+    width:300px;
+    color:white;
+    align-items: center;
+     border: 3px solid black; 
+    box-shadow: 6px 6px  rgb(58, 57, 57);
+
+}
+#register>input{
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+#register>button{
+    margin-left:1%;
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+#register>button:hover{
+    background-color: rgb(138, 135, 135);
+}
+#logindiv{
+    margin-left: 40%;
+    margin-top: 30px;
+    background-color: rgb(197, 197, 238);
+    box-shadow:6px 6px rgb(203, 203, 223);
+    height: 450px;
+    
+    
+    
+}
+#logindiv>input{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+}
+#logindiv>button{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 10%;
+}
+#logindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid black;
+    width: 400px;
+    
+}
+#logindiv>button{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width:70px;
+    font-weight: 700;
+    font-size: 15px;
+    
+
+}
+
+
+    
